@@ -9,8 +9,19 @@ int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
 
-    
+    char pais1[20] = "Brasil"
+    char pais2[20] = "Argentina"
+        
     // Cadastro das Cartas:
+    
+    //carta 1 Brasil
+    int area1 = 50000;
+    int pib1 = 20000;
+
+    //Carta 2 = Argentina
+    int area2 = 2000;
+    int pib2 = 3000;
+
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
