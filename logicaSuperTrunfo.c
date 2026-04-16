@@ -45,7 +45,7 @@ int main() {
     printf("Escolha um atributo:\n");
     printf("1.População\n");
     printf("2.Área\n");
-    printf("3.pib\n");
+    printf("3.Pib\n");
     printf("Opção:");
     scanf( "%d", &opcao);
     // Desenvolva a lógica de comparação entre duas cartas.
@@ -55,30 +55,31 @@ int main() {
     case 1:
         atributo1_carta1 = populacao1; atributo1_carta2 = populacao2;
         printf("Você escolheu População.\n");
-        if (populacao1 > populacao2) {
+        /*if (populacao1 > populacao2) {
          printf("Pais1 tem maior população.\n");
      } else {
          printf("Pais2 tem maior população.\n");
-     }
+     }*/
         break;
     case 2:
         atributo2_carta1 = area1; atributo2_carta2 = area2;
         printf("Você escolheu área.\n");
-        if (area1 > area2) {
-        printf("Area1 maior que area2./n");
+        /*if (area1 > area2) {
+        printf("Area1 maior que area2.\n");
     } else{
-        printf("Area2, maior que area1.");
-    }
+        printf("Area2, maior que area1.\n");
+    }*/
         break;
     case 3:
         atributo3_carta1 = pib1; atributo3_carta2 = pib2;
         printf("Você escolheu pib.\n");
-        if (pib1 > pib2){
+        /*if (pib1 > pib2){
         printf("Pib1 > pib2.\n");
     } else{
         printf("Pib2 maior quer pib1");
-
-    }     
+    } */    
+        break;
+    
 
     default:
         printf("Opção errada.\n");
@@ -88,6 +89,38 @@ int main() {
 
     // Exemplo:
     
+    printf("\n--- Resultado ---\n");
+
+    if(atributo1_carta1 > 0 || atributo1_carta2 > 0) {
+        if(atributo1_carta1 > atributo1_carta2) {
+            printf("Brasil ganhou na Populacao!\n");
+        } else {
+            printf("Argentina ganhou na Populacao!\n");
+        }
+    }
+
+    if(atributo2_carta1 > 0 || atributo2_carta2 > 0) {
+        if(atributo2_carta1 > atributo2_carta2) {
+            printf("Brasil ganhou na Area!\n");
+        } else {
+            printf("Argentina ganhou na Area!\n");
+        }
+    }
+
+    if(atributo3_carta1 > 0 || atributo3_carta2 > 0) {
+        if(atributo3_carta1 > atributo3_carta2) {
+            printf("Brasil ganhou no PIB!\n");
+        } else {
+            printf("Argentina ganhou no PIB!\n");
+        }
+    }
+
+    return 0;
+}
+
+
+
+
 
     
 
@@ -97,11 +130,23 @@ int main() {
 
     // Exibição dos Resultados:
 
-    if(atributo1_carta1 > atributo1_carta2){
+    /*if(atributo1_carta1 > atributo1_carta2){
         printf("Brasil ganhou.\n");
     }else{
         printf("Argentina ganhou.\n");
     }
+
+    if(atributo2_carta1 > atributo2_carta2){
+        printf("Brasil ganhou.\n");
+    }else{
+        printf("Argentina ganhou.\n");
+    }
+
+    if(atributo3_carta1 > atributo3_carta2){
+        printf("Brasil ganhou.\n");
+    }else{
+        printf("Argentina ganhou.\n");
+    }*/
 
 
 
@@ -111,5 +156,4 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-    return 0;
-}
+
