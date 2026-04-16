@@ -9,17 +9,21 @@ int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
 
-    char pais1[20] = "Brasil";
-    char pais2[20] = "Argentina";
-        
+    
+    int opcao1, opcao2;
+    int atributo1_carta1, atributo1_carta2;
+    int atributo2_carta1, atributo2_carta2;
+    int atributo3_carta1, atributo3_carta2;   
     // Cadastro das Cartas:
     
     //carta 1 Brasil
+    char pais1[] = "Brasil";
     int populacao1 = 25000;
     int area1 = 50000;
     int pib1 = 20000;
 
     //Carta 2 = Argentina
+    char pais2[] = "Argentina";
     int populacao2 = 1500;
     int area2 = 2000;
     int pib2 = 3000;
@@ -36,7 +40,31 @@ int main() {
     // (Repita para cada propriedade)
 
     // Comparação de Cartas:
+
+    printf("#### Jogo Super Trunfo ####\n\n");
+    printf("Escolha um atributo:\n");
+    printf("1.População\n");
+    printf("2.Área\n");
+    printf("3.pib\n");
+    printf("Opção:");
+    scanf( "%d", &opcao);
     // Desenvolva a lógica de comparação entre duas cartas.
+
+    switch (opcao)
+    {
+    case 1:
+        atributo1_carta1 = populacao1; atributo1_carta2 = populacao2;
+        break;
+    case 2:
+        atributo2_carta1 = area1; atributo2_carta2 = area2;
+        break;
+    case 3:
+        atributo3_carta1 = pib1; atributo3_carta2 = pib2;
+
+    default:
+        printf("Opção errada.\n");
+        break;
+    }
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
     // Exemplo:
