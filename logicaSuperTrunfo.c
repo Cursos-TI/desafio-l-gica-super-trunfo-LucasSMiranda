@@ -10,7 +10,7 @@ int main() {
     // Você pode utilizar o código do primeiro desafio
 
     
-    int opcao1, opcao2;
+    int opcao;
     int atributo1_carta1, atributo1_carta2;
     int atributo2_carta1, atributo2_carta2;
     int atributo3_carta1, atributo3_carta2;   
